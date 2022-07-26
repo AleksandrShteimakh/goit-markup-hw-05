@@ -331,7 +331,7 @@ button {
 }
 .team-box {
   padding-top: 30px;
-  padding-bottom: 16px;
+  margin-bottom: 30px;
 }
 .team-name {
   margin-bottom: 10px;
@@ -345,6 +345,7 @@ button {
   color: var(--primery-black-color);
 }
 .team-work {
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -356,11 +357,7 @@ button {
 }
 .soc-box {
   display: flex;
-  /* column-gap: 10px;
-  align-items: center; */
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .soc-box-title {
@@ -453,7 +450,7 @@ button {
 }
 
 .client-box-item:hover {
-  border: 1px solid var(--acent-color);
+  border-color: var(--acent-color);
 }
 
 .client-box-item:hover .client-page {
@@ -680,7 +677,11 @@ button {
   gap: 30px;
 }
 
-.card-border:hover {
+.card-border {
+  display: flex;
+}
+
+.card-border-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
