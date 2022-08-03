@@ -23,7 +23,7 @@
         </a>
         <ul class="header-list">
           <li class="header-item">
-            <a href="" class="link header-link">Студия</a>
+            <a href="" class="link header-link current">Студия</a>
           </li>
           <li class="header-item">
             <a href="./portfolio.html" class="link header-link">Портфолио</a>
@@ -58,7 +58,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="btn">Заказать услугу</button>
+        <button type="button" class="btn" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- ----------------------main------------------------------>
@@ -122,12 +122,22 @@
         <ul class="work-list">
           <li class="work-item">
             <img src="./img/box1.png" alt="руки" width="370" class="img-style" />
+            <div class="work-lable">
+              <h2 class="work-lable-title">Десктопные приложения</h2>
+            </div>
           </li>
           <li class="work-item">
             <img src="./img/img-2.png" alt="айпад" width="370" class="img-style" />
+            <div class="work-lable">
+              <h2 class="work-lable-title">Мобильные приложения</h2>
+            </div>
           </li>
           <li class="work-item">
             <img src="./img/img.png" alt="телефон" width="370" class="img-style" />
+            <div class="work-lable">
+              <h2 class="work-lable-title">Дизайнерские решения</h2>
+
+            </div>
           </li>
         </ul>
       </div>
@@ -172,29 +182,30 @@
             <div class="team-box">
               <h3 class="team-name">Ольга Репина</h3>
               <p class="team-work">Frontend Developer</p>
+              <ul class="soc-box">
+                <li class="soc-box-title">
+                  <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
+                      <use href="./images/symbol-defs.svg#icon-instagram" class="icon-ini"></use>
+                    </svg></a>
+                </li>
+                <li class="soc-box-title">
+                  <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg></a>
+                </li>
+                <li class="soc-box-title">
+                  <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg></a>
+                </li>
+                <li class="soc-box-title">
+                  <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg></a>
+                </li>
+              </ul>
             </div>
-            <ul class="soc-box">
-              <li class="soc-box-title">
-                <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
-                    <use href="./images/symbol-defs.svg#icon-instagram" class="icon-ini"></use>
-                  </svg></a>
-              </li>
-              <li class="soc-box-title">
-                <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg></a>
-              </li>
-              <li class="soc-box-title">
-                <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg></a>
-              </li>
-              <li class="soc-box-title">
-                <a href="" class="icon-link"><svg class="icon-soc" height="20px" width="20px">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg></a>
-              </li>
-            </ul>
+
           </li>
           <li class="team-item">
             <img src="./img/img-3.jpg" alt="Николай Тарасов" width="270" class="team-link img-style" />
@@ -363,6 +374,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-icon" data-modal-close>
+        <svg class="modal-close" height="18px" width="18px">
+          <use href="./images/symbol-defs.svg#icon-vector1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
